@@ -1,6 +1,6 @@
+import DeleteIcon from '@mui/icons-material/Delete';
 
 function Note(props) {
-
   return (
     <div className="note-card shadow">
       <h1>{props.title}</h1>
@@ -9,7 +9,7 @@ function Note(props) {
         key={props.id}
         onClick={() => props.onNote(props.id)}
       >
-        DELETE
+        <DeleteIcon />
       </button>
     </div>
   );
